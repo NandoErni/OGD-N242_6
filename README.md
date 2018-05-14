@@ -1,7 +1,2 @@
 # OGD-N242_6
-Hallol
-Halhgjhgkjli Hallol
-daaa
-wawawasa
-
-HHHHH
+Dies ist unser Projekt
