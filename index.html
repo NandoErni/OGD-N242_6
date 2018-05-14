@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- AUTOR UND SO ZÜÜG DO INNE SCHRIBE -->
+
+
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Finanzausgleich</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -17,6 +24,10 @@
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+    <!-- plus a jQuery UI theme, here I use "flick" -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!-- D3 -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -27,10 +38,27 @@
 
     <!-- eigene css files -->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/slid.css">
 </head>
 <body>
 
+<div class="container">
 
+    <div class="jumbotron">
+
+        <h1 id="mainTitle">Finanzausgleich Thurgau <img id="tgLogo" src="img/tglogo_nurloewe.png"></h1>
+
+        <p>Das schlaue Entwickler-Team der IMS in Frauenfeld hat, im Rahmen der Sonderwoche 2018, diese überaus überdachte und ergonomische Website entwickelt.</p>
+        <br><p>Mithilfe des Schieberregler können Sie das gewünschte Jahr anzeigen lassen. Die grünen Gemeinden mussten in diesem Jahr Auszahlen. Die roten Gemeinden mussten Abschöpfen.
+        Sie können ebenfalls eine Gemeinde anklicken um genauere Informationen über diese Gemeinde herauszufinden</p>
+    </div>
+
+    <div id="flat-slider"></div>
+
+</div>
+
+
+<!-- eigene js files -->
 <script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
