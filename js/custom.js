@@ -17,6 +17,8 @@ function updateSliderTable() {
             arrayTable[arrIndex++] = dataArray[i];
         }
     }
+    output.innerHTML = arrayTable;
+    dataTable(arrayTable);
 }
 
 function readingFinanzausgleich() {
@@ -45,7 +47,7 @@ function readTextFile(file)
     };
     rawFile.send(null);
 }
-
+//as;asd;asd;lll
 function string2Array(str, a) {
     var arr = [];
     var index = 0;
@@ -70,4 +72,21 @@ function sliderOninput() {
 function bodyOnload(){
     readingFinanzausgleich();
     updateSlider();
+}
+
+function dataTable(arr) {
+    var body, tab, tr, td, tn, row, col;
+    body = document.getElementsByTagName('body')[0];
+    tab = document.createElement('table');
+    for (row = 0; row < arr.length; row++){
+        tr = document.createElement('tr');
+        for (col = 0; col < arr[row].length; col++){
+            td = document.createElement('td');
+            tn = document.createTextNode(arr[row][col]);
+            td.appendChild(tn);
+            tr.appendChild(td);
+        }
+        tab.appendChild(tr);
+    }
+    body.appendChild(tab);
 }
