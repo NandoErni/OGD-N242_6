@@ -72,7 +72,7 @@ function sliderOninput() {
 function bodyOnload(){
     readingFinanzausgleich();
     updateSlider();
-    updateGemeinde("Aadorf", "img/gemeinden/Sulgen.png");
+    updateGemeinde("Sulgen", "img/gemeinden/Sulgen.png");
 
 }
 

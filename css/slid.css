@@ -28,6 +28,11 @@
 }
 
 .slidecontainer{
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slidOutput{
+    padding-top: 10px;
 }

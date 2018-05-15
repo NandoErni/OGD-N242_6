@@ -2,12 +2,25 @@
     font-family: 'Gothic A1', sans-serif;
 }
 
-body{
-    /*background-color: #353535;*/
+body, .container{
+    width: 100%;
 }
 
-#slidOutput{
-    padding-top: 10px;
+.darker{
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+.lighter{
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #mainTitle{
@@ -16,10 +29,6 @@ body{
 #tgLogo{
     width: 150px;
     height: 100%;
-}
-
-.container{
-    background-color: white;
 }
 
 #gemeindeLogo{
