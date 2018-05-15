@@ -28,6 +28,8 @@ function readingFinanzausgleich() {
     for(var i = 0; i < dataArrayRows.length; i++){
         dataArray[i] = string2Array(dataArrayRows[i].toString(), ';');
     }
+
+
 }
 
 function readTextFile(file)
@@ -71,6 +73,8 @@ function sliderOninput() {
 function bodyOnload(){
     readingFinanzausgleich();
     updateSlider();
+    //images laden nicht immer
+    updateGemeinde("Sulgen", "img/gemeinden/Sulgen.png");
 }
 
 function generateTable(data) {
@@ -109,4 +113,8 @@ function generateTable(data) {
     }
 
     return html;
+}
+
+function updateGemeinde(gemeinde, gemeindeImg) {
+    document.getElementById("gemeindeH").innerHTML = "<img id='gemeindeLogo' src='"+ gemeindeImg+"'> " + gemeinde;
 }

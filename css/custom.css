@@ -21,3 +21,12 @@ body{
 .container{
     background-color: white;
 }
+
+#gemeindeLogo{
+    width: 100px;
+    height: 100%;
+}
+
+#gemeindeH{
+    font-size: 50pt;
+}
