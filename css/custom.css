@@ -2,6 +2,10 @@
     font-family: 'Gothic A1', sans-serif;
 }
 
+body{
+    /*background-color: #353535;*/
+}
+
 #mainTitle{
 }
 
@@ -10,7 +14,6 @@
     height: 100%;
 }
 
-#flat-slider{
-    margin-left: 20px;
-    margin-right: 20px;
+.container{
+    background-color: white;
 }
