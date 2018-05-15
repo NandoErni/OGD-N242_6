@@ -5,3 +5,8 @@ $("#flat-slider")
         range: "min",
         value: 2010
     }).slider("pips");
+
+
+function f(zahl){
+    return zahl;
+}
