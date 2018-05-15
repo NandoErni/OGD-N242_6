@@ -1,6 +1,8 @@
-var output = $("slidOutput");
-var slider = $('slider');
+var output = document.getElementById("slidOutput");
+var slider = document.getElementById('slider');
 
-function sliderOninput() {
-    alert('');
+
+
+function updateSlider() {
+    output.innerHTML = slider.value;
 }

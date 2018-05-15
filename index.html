@@ -39,8 +39,9 @@
     <!-- eigene css files -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/slid.css">
+
 </head>
-<body>
+<body onload="bodyOnload();">
 
 <div class="container">
 
@@ -54,13 +55,14 @@
     </div>
 
     <div class=slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="slider" oninput="sliderOninput('');">
+        <input type="range" min="2004" max="2017" value="2017" class="slider" id="slider" oninput="sliderOninput('');">
         <p id="slidOutput"></p>
     </div>
 
 
 <!-- eigene js files -->
-<script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/onEvents.js"></script>
 </div>
 </body>
 </html>
