@@ -1,9 +1,15 @@
 *{
     font-family: 'Gothic A1', sans-serif;
+    text-align: justify;
+}
+
+html{
+
 }
 
 body, .container{
     width: 100%;
+    padding: 0px;
 }
 
 .darker{
@@ -14,21 +20,28 @@ body, .container{
 .lighter{
     background-color: #ffffff;
     width: 100%;
+
 }
 
 .jumbotron{
-    margin-top: 20px;
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
 }
 
-#mainTitle{
+.jumbotronMap{
+    background-color: transparent;
 }
 
 #tgLogo{
     width: 150px;
-    height: 100%;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    right: 455px;
+}
+
+#mapText{
+    font-size: 12pt;
 }
 
 #gemeindeLogo{

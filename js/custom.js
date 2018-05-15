@@ -83,11 +83,11 @@ function generateTable(data) {
     //BFS_NR_GEMEINDE GEMEINDE_NAME Jahr Auszahlung_Abschoepfung_in_CHF Auszahlung_Abschoepfung_in_CHF_pro_Einwohner
     html += "<thead>\n" +
         "    <tr>\n" +
-        "      <th scope=\"col\">BFS_NR_GEMEINDE</th>\n" +
-        "      <th scope=\"col\">GEMEINDE_NAME</th>\n" +
+        "      <th scope=\"col\">#</th>\n" +
+        "      <th scope=\"col\">Gemeinde</th>\n" +
         "      <th scope=\"col\">Jahr</th>\n" +
-        "      <th scope=\"col\">Auszahlung_Abschoepfung_in_CHF</th>\n" +
-        "      <th scope=\"col\">Auszahlung_Abschoepfung_in_CHF_pro_Einwohner</th>\n" +
+        "      <th scope=\"col\">Auszahlung oder Abschoepfung in CHF</th>\n" +
+        "      <th scope=\"col\">Auszahlung oder Abschoepfung in CHF pro Einwohner</th>\n" +
         "    </tr>\n" +
         "  </thead>";
 
