@@ -1,6 +1,6 @@
-var slider = $("myRange");
 var output = $("slidOutput");
+var slider = $('slider');
 
-slider.on('change', function () {
+function sliderOninput() {
     alert('');
-});
+}
