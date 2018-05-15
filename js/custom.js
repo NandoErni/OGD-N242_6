@@ -17,8 +17,7 @@ function updateSliderTable() {
             arrayTable[arrIndex++] = dataArray[i];
         }
     }
-    output.innerHTML = arrayTable;
-    dataTable(arrayTable);
+    generateTable(arrayTable);
 }
 
 function readingFinanzausgleich() {
@@ -74,19 +73,40 @@ function bodyOnload(){
     updateSlider();
 }
 
-function dataTable(arr) {
-    var body, tab, tr, td, tn, row, col;
-    body = document.getElementsByTagName('body')[0];
-    tab = document.createElement('table');
-    for (row = 0; row < arr.length; row++){
-        tr = document.createElement('tr');
-        for (col = 0; col < arr[row].length; col++){
-            td = document.createElement('td');
-            tn = document.createTextNode(arr[row][col]);
-            td.appendChild(tn);
-            tr.appendChild(td);
-        }
-        tab.appendChild(tr);
+function generateTable(data) {
+    var html = '';
+
+    if (typeof (data[0]) === 'undefined') {
+        return null;
     }
-    body.appendChild(tab);
+
+    if (data[0].constructor === String) {
+        html += '<tr>\r\n';
+        for (var item in data) {
+            html += '<td>' + data[item] + '</td>\r\n';
+        }
+        html += '</tr>\r\n';
+    }
+
+    if (data[0].constructor === Array) {
+        for (var row in data) {
+            html += '<tr>\r\n';
+            for (var item in data[row]) {
+                html += '<td>' + data[row][item] + '</td>\r\n';
+            }
+            html += '</tr>\r\n';
+        }
+    }
+
+    if (data[0].constructor === Object) {
+        for (var row in data) {
+            html += '<tr>\r\n';
+            for (var item in data[row]) {
+                html += '<td>' + item + ':' + data[row][item] + '</td>\r\n';
+            }
+            html += '</tr>\r\n';
+        }
+    }
+
+    return html;
 }
