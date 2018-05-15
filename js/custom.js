@@ -4,14 +4,13 @@ const finanzausgleichPath = "data/Gesamtauswirkungen_Finanzausgleich.csv";
 var dataArray = [], dataString, dataArrayRows, arrayTable = [];
 
 function updateSlider() {
-    output.innerHTML = slider.value;
+    output.innerHTML = "Jahr: " + slider.value;
 
 }
 
 function updateSliderTable() {
     var year = slider.value;
     var arrIndex = 0;
-    //alert(dataArray[0][2] + " -- " + year.toString());
     for(var i = 0; i < dataArray.length; i++){
 
         if(dataArray[i][2] == year.toString()){
