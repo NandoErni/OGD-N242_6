@@ -65,6 +65,7 @@ function string2Array(str, a) {
 function sliderOninput() {
     updateSlider();
     updateArraySlider();
+    init(true);
 }
 
 function bodyOnload(){
@@ -158,8 +159,10 @@ function umlaute(data) {
 
 function doppelNull(data) {
     var out = "";
-    for(var i = 0; i < data.length-1; i++){
-        if((data[i] == "0" && data[i+1] == "0")){
+    for(var i = 1; i < data.length-1; i++){
+        if(data[i-1] == "2" && data[i] == "0" && data[i+1] == "0"){
+            out += data[i];
+        } else if(data[i] == "0" && data[i+1] == "0"){
             out += "0";
             i++;
         } else {
@@ -177,4 +180,13 @@ function onClickMap(id) {
         }
     }
     updateGemeinde(gName);
+}
+
+
+for(var i = 0; i < array.length; i++){
+    for(var j = 0; j < array.length; j++){
+        if(array[i][1] == array[j][1]){
+            array[j][1] = null;
+        }
+    }
 }
