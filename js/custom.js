@@ -21,12 +21,11 @@ function updateArraySlider() {
 function readingFinanzausgleich() {
 
     readTextFile(finanzausgleichPath);
-    dataArrayRows = d3.csvParseRows(dataString);
+    dataArrayRows = string2Array(dataString, "\n");
 
     for(var i = 0; i < dataArrayRows.length; i++){
         dataArray[i] = string2Array(dataArrayRows[i].toString(), ';');
     }
-
 
 }
 
@@ -106,9 +105,10 @@ function generateTable(data) {
 }
 
 function updateGemeinde(gemeinde) {
+    var gemeindeImg = "http://www.omsakthiamma.org/images/404.png";
     for(var k = 0; k < gemeindeData.length; k++){
         if(gemeindeData[k][1] == gemeinde){
-            var gemeindeImg = gemeindeData[k][2];
+            gemeindeImg = gemeindeData[k][2];
         }
     }
 
@@ -137,8 +137,10 @@ function replaceEmptyData(data) {
 
 function umlaute(data) {
     var out = "";
-    for(var i = 0; i < data.length-1; i++){
-        if((data[i] == "a" && data[i+1] == "e")){
+    for(var i = 10; i < data.length-1; i++) {
+        if((data[i] == "u" && data[i+1] == "e" && data[i-1] == "a")){
+            out += data[i];
+        }else if((data[i] == "a" && data[i+1] == "e")){
             out += "ä";
             i++;
         } else if((data[i] == "o" && data[i+1] == "e")){
@@ -165,4 +167,14 @@ function doppelNull(data) {
         }
     }
     return out;
+}
+
+function onClickMap(id) {
+    var gName = "";
+    for(var i = 0; i < dataArray.length; i++){
+        if (dataArray[i][0] == id){
+            gName = dataArray[i][1];
+        }
+    }
+    updateGemeinde(gName);
 }

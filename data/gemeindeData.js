@@ -1,6 +1,6 @@
 const gemeindeData = [
     //Bezirk Arbon, 11 Gemeinden
-    [4436, "Romanshorn",  "img/gemeinden/Rommanshorn.svg"],
+    [4436, "Romanshorn",  "img/gemeinden/Romanshorn.svg"],
     [4451, "Uttwil", "img/gemeinden/Uttwil.png"],
     [4426, "Kesswil", "img/gemeinden/Kesswil.png"],
     [4441, "Salmsach", "img/gemeinden/Salmsach.png"],
@@ -30,10 +30,10 @@ const gemeindeData = [
     [4701, "Wäldi", "img/gemeinden/Wäldi.png"],
 
     //Bezirk Weinfelden, 17 Gemeinden
-    [4486, "Hauptwilen-Gottshaus", "img/gemeinden/Hauptwil-Gottshaus.png"],
+    [4486, "Hauptwil-Gottshaus", "img/gemeinden/Hauptwil-Gottshaus.png"],
     [4511, "Zihlschlacht-Sitterdorf", "img/gemeinden/Zihlschlacht-Sitterdorf.png"],
     [4471, "Bischofszell", "img/gemeinden/Bischofszell.png"],
-    [4495, "Hohen-Tannen", "img/gemeinden/Hohentannen.png"],
+    [4495, "Hohentannen", "img/gemeinden/Hohentannen.png"],
     [4476, "Erlen", "img/gemeinden/Erlen.png"],
     [4501, "Kradolf-Schönenberg", "img/gemeinden/Kradolf-Schönenberg.png"],
     [4506, "Sulgen", "img/gemeinden/Sulgen.png"],
@@ -60,7 +60,7 @@ const gemeindeData = [
     [4831, "Müllheim", "img/gemeinden/Müllheim.png"],
     [4841, "Pfyn", "img/gemeinden/Pfyn.png"],
     [4621, "Warth-Weiningen", "img/gemeinden/Warth-Weiningen.png"],
-    [4616, "Uessingen-Buch", "img/gemeinden/Uesslingen-Buch.png"],
+    [4616, "Uesslingen-Buch", "img/gemeinden/Uesslingen-Buch.png"],
     [4601, "Neunforn", "img/gemeinden/Neunforn.png"],
     [4816, "Homburg", "img/gemeinden/Homburg.png"],
     [4811, "Herdern", "img/gemeinden/Herdern.png"],
@@ -72,16 +72,16 @@ const gemeindeData = [
     [4871, "Wagenhausen", "img/gemeinden/Wagenhausen.png"],
     [4545, "Diessenhofen", "img/gemeinden/Diessenhofen.png"],
     [4536, "Basadingen-Schlattingen", "img/gemeinden/Basadingen-Schlattingen.png"],
-    [4546, "Schlatt (TG)", "img/gemeinden/Schlatt.png"],
+    [4546, "Schlatt", "img/gemeinden/Schlatt.png"],
 
     //Bezirk Münchwilen (TG), 12 Gemeinden
     [4726, "Fischingen", "img/gemeinden/Fischingen.png"],
-    [4751, "Rickenbach (TG)", "img/gemeinden/Rickenbach.png"],
-    [4786, "Wilen (TG)", "img/gemeinden/Wilen.png"],
+    [4751, "Rickenbach", "img/gemeinden/Rickenbach.png"],
+    [4786, "Wilen", "img/gemeinden/Wilen.png"],
     [4761, "Sirnach", "img/gemeinden/Sirnach.svg"],
     [4724, "Eschlikon", "img/gemeinden/Eschlikon.png"],
-    [4721, "Bichelsee-Balterswil (Bi.)", "img/gemeinden/Bichelsee-Balterswil.png"],
-    [4746, "Münchwilen (TG)", "img/gemeinden/Münchwilen.png"],
+    [4721, "Bichelsee-Balterswil", "img/gemeinden/Bichelsee-Balterswil.png"],
+    [4746, "Münchwilen", "img/gemeinden/Münchwilen.png"],
     [4781, "Wängi", "img/gemeinden/Wängi.svg"],
     [4551, "Aadorf", "img/gemeinden/Aadorf.svg"],
     [4723, "Braunau", "img/gemeinden/Braunau.png"],
