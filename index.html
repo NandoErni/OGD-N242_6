@@ -45,7 +45,21 @@
 
 </head>
 <body onload="bodyOnload();">
-
+<div class="well" id="legende">
+    <p id="legendeTitle">Legende</p><hr size = "10" style="border-color: #aaaaaa">
+    <p id="legendeText">
+        <span id="colGreen">●</span>
+        Abschöpfung von der Gemeinde<br>
+        <span id="colRed">●</span>
+        Auszahlung an die Gemeinde<br>
+        <span id="colBlack">●</span>
+        keine Zahlung<br><br>
+        Kästchen<br>
+        1. Gemeindenamen<br>
+        2. Auszahlung und Abschöpfung<br>
+        3. Auszahlung und Abschöpfung pro Einwohner<br>
+    </p>
+</div>
 <div class="container">
 
     <div class="darker">
@@ -67,8 +81,13 @@
 
                 <h2>Thurgau</h2>
 
-                <p id="mapText">Mithilfe des Schieberregler können Sie das gewünschte Jahr anzeigen lassen. Die grünen Gemeinden mussten in diesem Jahr Auszahlen. Die roten Gemeinden mussten Abschöpfen.
+                <p id="mapText">Mithilfe des Schieberregler können Sie das gewünschte Jahr anzeigen lassen.
                 Sie können ebenfalls eine Gemeinde anklicken um genauere Informationen über diese Gemeinde herauszufinden</p>
+                <p id="mapText">
+                    Negative Vorzeichen kennzeichnen jeweils die Auszahlung an die Gemeinde, positive Vorzeichen Abschöpfungen von der Gemeinde. Die Variable „Auszahlung und Abschöpfung in
+                    CHF/Einwohner“ zeigt den pro Gemeinde ausgezahlten bzw. abgeschöpften Betrag relativ zur Einwohnerzahl der Gemeinde. Die Einwohnerzahl wurde per 31.12 des Vorjahres gemäss
+                    kantonaler Bevölkerungserhebung ermittelt.
+                </p>
 
             <br><div id="graph"></div><br>
             <div class="slidecontainer">

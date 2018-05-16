@@ -71,7 +71,6 @@ function sliderOninput() {
 function bodyOnload(){
     readingFinanzausgleich();
     updateSlider();
-    updateGemeinde("Sulgen");
 
 }
 

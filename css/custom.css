@@ -64,3 +64,31 @@ body, .container{
     margin: 10px auto;
     font-size: 12pt;
 }
+
+#legende{
+    bottom: auto;
+    left: auto;
+    right: 20px;
+    top: 820px;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+}
+
+#legendeTitle{
+    font-size: 16pt;
+}
+
+#legendeText{
+
+}
+
+#colBlack{
+    color: #bbbbbb;
+}
+#colRed{
+    color: #ee2c2c;
+}
+#colGreen{
+    color: #228b22;
+}
