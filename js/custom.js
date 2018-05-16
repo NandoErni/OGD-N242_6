@@ -71,7 +71,7 @@ function sliderOninput() {
 function bodyOnload(){
     readingFinanzausgleich();
     updateSlider();
-
+    init(true);
 }
 
 function generateTable(data) {
