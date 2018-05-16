@@ -26,8 +26,6 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
-
     <!-- plus a jQuery UI theme, here I use "flick" -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -41,6 +39,8 @@
     <!-- eigene css files -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/slid.css">
+
+
 
 </head>
 <body onload="bodyOnload();">
@@ -69,7 +69,7 @@
                 <p id="mapText">Mithilfe des Schieberregler können Sie das gewünschte Jahr anzeigen lassen. Die grünen Gemeinden mussten in diesem Jahr Auszahlen. Die roten Gemeinden mussten Abschöpfen.
                 Sie können ebenfalls eine Gemeinde anklicken um genauere Informationen über diese Gemeinde herauszufinden</p>
 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><div id="graph"></div><br>
             <div class="slidecontainer">
                 <input type="range" min="2004" max="2017" value="2017" class="slider" id="slider" oninput="sliderOninput();">
                 <p id="slidOutput"></p>
@@ -97,5 +97,7 @@
 </div>
 <!-- eigene js files -->
 <script type="text/javascript" src="js/custom.js"></script>
+<!-- Gemeinde data -->
+<script src="data/gemeindeData.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-var muniArr = [
+const gemeindeData = [
     //Bezirk Arbon, 11 Gemeinden
     [4436, "Romanshorn",  "img/gemeinden/Rommanshorn.svg"],
     [4451, "Uttwil", "img/gemeinden/Uttwil.png"],
@@ -89,63 +89,3 @@ var muniArr = [
     [4716, "Bettwiesen", "img/gemeinden/Bettwiesen.png"],
     [4741, "Lommis", "img/gemeinden/Lommis.png"]
 ];
-
-var color = [
-    [1, "#f9d9cc", "#cffae3"],
-    [2, "#f6c7b2", "#b7f8d6"],
-    [3, "#f3b499", "#9ff6c8"],
-    [4, "#f1a27f", "#87f4bb"],
-    [5, "#ee8f66", "#6ff2ad"],
-    [6, "#eb7c4c", "#57f09f"],
-    [7, "#e86a32", "#3fee92"],
-    [8, "#e55719", "#27ec84"],
-    [9, "#e34500", "#10ea77"],
-    [10, "#cc3e00", "#0ed26b"],
-    [11, "#b53700", "#0cbb5f"]
-];
-
-var btnP = null;
-
-var max = 0;
-for (i = 0; i < muniArr.length; i++) {
-    if (max < muniArr[i][2]) {
-        max = muniArr[i][2];
-    }
-}
-
-init();
-
-$("button").click(function () {
-    switch (this.id) {
-        case "btn1":
-            $('#graph').empty();
-            btnP = this.id;
-            init();
-            break;
-        case "btn2":
-            $('#graph').empty();
-            btnP = this.id;
-            init();
-            break;
-        case "btn3":
-            $('#graph').empty();
-            btnP = this.id;
-            init();
-            break;
-        case "btn4":
-            $('#graph').empty();
-            btnP = this.id;
-            init();
-            break;
-        case "btn5":
-            $('#graph').empty();
-            btnP = this.id;
-            init();
-            break;
-        default:
-            $('#graph').empty();
-            btnP = null;
-            init();
-            break;
-    }
-});

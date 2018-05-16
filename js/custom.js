@@ -40,13 +40,13 @@ function readTextFile(file)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                dataString = replaceEmptyData(rawFile.responseText);
+                dataString = umlaute(replaceEmptyData(rawFile.responseText));
             }
         }
     };
     rawFile.send(null);
 }
-//as;asd;asd;lll
+
 function string2Array(str, a) {
     var arr = [];
     var index = 0;
@@ -71,7 +71,7 @@ function sliderOninput() {
 function bodyOnload(){
     readingFinanzausgleich();
     updateSlider();
-    updateGemeinde("Sulgen", "img/gemeinden/Sulgen.png");
+    updateGemeinde("Sulgen");
 
 }
 
@@ -79,7 +79,6 @@ function generateTable(data) {
     var table = document.getElementById("dataTable");
     var html = "";
 
-    //BFS_NR_GEMEINDE GEMEINDE_NAME Jahr Auszahlung_Abschoepfung_in_CHF Auszahlung_Abschoepfung_in_CHF_pro_Einwohner
     html += "<thead>\n" +
         "    <tr>\n" +
         "      <th scope=\"col\">BFS-Nr.</th>\n" +
@@ -106,7 +105,13 @@ function generateTable(data) {
     table.innerHTML = html;
 }
 
-function updateGemeinde(gemeinde, gemeindeImg) {
+function updateGemeinde(gemeinde) {
+    for(var k = 0; k < gemeindeData.length; k++){
+        if(gemeindeData[k][1] == gemeinde){
+            var gemeindeImg = gemeindeData[k][2];
+        }
+    }
+
     document.getElementById("gemeindeH").innerHTML = "<img id='gemeindeLogo' src='"+ gemeindeImg+"'> " + gemeinde;
     var arrIndex = 0;
     for(var i = 0; i < dataArray.length; i++){
@@ -117,13 +122,43 @@ function updateGemeinde(gemeinde, gemeindeImg) {
     generateTable(tableArray);
 }
 
-//sda;;asd
-//sda;0;;0;asd
 function replaceEmptyData(data) {
     var out = "";
     for(var i = 0; i < data.length-2; i++){
         if((data[i] == ";" && data[i+1] == ";")){
             out += ";0";
+            i++;
+        } else {
+            out += data[i];
+        }
+    }
+    return doppelNull(out);
+}
+
+function umlaute(data) {
+    var out = "";
+    for(var i = 0; i < data.length-1; i++){
+        if((data[i] == "a" && data[i+1] == "e")){
+            out += "ä";
+            i++;
+        } else if((data[i] == "o" && data[i+1] == "e")){
+            out += "ö";
+            i++;
+        } else if((data[i] == "u" && data[i+1] == "e")){
+            out += "ü";
+            i++;
+        } else {
+            out += data[i];
+        }
+    }
+    return out;
+}
+
+function doppelNull(data) {
+    var out = "";
+    for(var i = 0; i < data.length-1; i++){
+        if((data[i] == "0" && data[i+1] == "0")){
+            out += "0";
             i++;
         } else {
             out += data[i];
