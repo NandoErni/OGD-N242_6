@@ -52,3 +52,15 @@ body, .container{
 #gemeindeH{
     font-size: 50pt;
 }
+
+.mid{
+    width: 54%;
+    margin: 0px auto;
+}
+
+#footerText{
+
+    width: 54%;
+    margin: 10px auto;
+    font-size: 12pt;
+}

@@ -1,13 +1,12 @@
 var output = document.getElementById("slidOutput");
 var slider = document.getElementById('slider');
-const finanzausgleichPath = "data/Gesamtauswirkungen_Finanzausgleich.csv";
+const finanzausgleichPath = "data/Gesamtauswirkungen_Finanzausgleichohne.csv";
 var dataArray = [], dataString, dataArrayRows, sliderArray = [], tableArray = [];
 
 function updateSlider() {
     output.innerHTML = "Jahr: " + slider.value;
 
 }
-
 function updateArraySlider() {
     var year = slider.value;
     var arrIndex = 0;
@@ -41,7 +40,7 @@ function readTextFile(file)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
-                dataString = rawFile.responseText;
+                dataString = replaceEmptyData(rawFile.responseText);
             }
         }
     };
@@ -83,7 +82,7 @@ function generateTable(data) {
     //BFS_NR_GEMEINDE GEMEINDE_NAME Jahr Auszahlung_Abschoepfung_in_CHF Auszahlung_Abschoepfung_in_CHF_pro_Einwohner
     html += "<thead>\n" +
         "    <tr>\n" +
-        "      <th scope=\"col\">#</th>\n" +
+        "      <th scope=\"col\">BFS-Nr.</th>\n" +
         "      <th scope=\"col\">Gemeinde</th>\n" +
         "      <th scope=\"col\">Jahr</th>\n" +
         "      <th scope=\"col\">Auszahlung oder Abschoepfung in CHF</th>\n" +
@@ -111,10 +110,24 @@ function updateGemeinde(gemeinde, gemeindeImg) {
     document.getElementById("gemeindeH").innerHTML = "<img id='gemeindeLogo' src='"+ gemeindeImg+"'> " + gemeinde;
     var arrIndex = 0;
     for(var i = 0; i < dataArray.length; i++){
-
         if(dataArray[i][1] == gemeinde){
             tableArray[arrIndex++] = dataArray[i];
         }
     }
     generateTable(tableArray);
+}
+
+//sda;;asd
+//sda;0;;0;asd
+function replaceEmptyData(data) {
+    var out = "";
+    for(var i = 0; i < data.length-2; i++){
+        if((data[i] == ";" && data[i+1] == ";")){
+            out += ";0";
+            i++;
+        } else {
+            out += data[i];
+        }
+    }
+    return out;
 }
