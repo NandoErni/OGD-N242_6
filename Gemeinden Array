@@ -1,0 +1,151 @@
+var muniArr = [
+    //Bezirk Arbon, 11 Gemeinden
+    [4436, "Romanshorn",  "img/gemeinden/Rommanshorn.svg"],
+    [4451, "Uttwil", "img/gemeinden/Uttwil.png"],
+    [4426, "Kesswil", "img/gemeinden/Kesswil.png"],
+    [4441, "Salmsach", "img/gemeinden/Salmsach.png"],
+    [4411, "Egnach", "img/gemeinden/Egnach.svg"],
+    [4401, "Arbon", "img/gemeinden/Arbon.png"],
+    [4421, "Horn", "img/gemeinden/Horn.svg"],
+    [4431, "Roggwil", "img/gemeinden/Roggwil.svg"],
+    [4461, "Amriswil", "img/gemeinden/Amriswil.svg"],
+    [4406, "Dozwil", "img/gemeinden/Dozwil.png"],
+    [4416, "Hefenhofen", "img/gemeinden/Hefenhofen.png"],
+    [4446, "Sommeri", "img/gemeinden/Sommeri.png"],
+
+    //Bezirk Kreuzlingen, 13 Gemeinden
+    [4656, "Güttingen", "img/gemeinden/Güttingen.png"],
+    [4641, "Altnau", "img/gemeinden/Altnau.svg"],
+    [4691, "Münsterlingen", "img/gemeinden/Münsterlingen.svg"],
+    [4643, "Bottighofen", "img/gemeinden/Bottighofen.png"],
+    [4671, "Kreuzlingen", "img/gemeinden/Kreuzlingen.png"],
+    [4681, "Langrickenbach", "img/gemeinden/Langrickenbach.png"],
+    [4683, "Lengwil", "img/gemeinden/Lengwil.png"],
+    [4666, "Kemmental", "img/gemeinden/Kemmental.png"],
+    [4696, "Tägerwilen", "img/gemeinden/Tägerwilen.png"],
+    [4651, "Gottlieben", "img/gemeinden/Gottlieben.png"],
+    [4646, "Ermatingen", "img/gemeinden/Ermatingen.png"],
+    [4851, "Salenstein", "img/gemeinden/Salenstein.png"],
+    [4846, "Raperswilen", "img/gemeinden/Raperswilen.png"],
+    [4701, "Wäldi", "img/gemeinden/Wäldi.png"],
+
+    //Bezirk Weinfelden, 17 Gemeinden
+    [4486, "Hauptwilen-Gottshaus", "img/gemeinden/Hauptwil-Gottshaus.png"],
+    [4511, "Zihlschlacht-Sitterdorf", "img/gemeinden/Zihlschlacht-Sitterdorf.png"],
+    [4471, "Bischofszell", "img/gemeinden/Bischofszell.png"],
+    [4495, "Hohen-Tannen", "img/gemeinden/Hohentannen.png"],
+    [4476, "Erlen", "img/gemeinden/Erlen.png"],
+    [4501, "Kradolf-Schönenberg", "img/gemeinden/Kradolf-Schönenberg.png"],
+    [4506, "Sulgen", "img/gemeinden/Sulgen.png"],
+    [4911, "Bürglen", "img/gemeinden/Bürglen.png"],
+    [4901, "Birwinken", "img/gemeinden/Birwinken.png"],
+    [4891, "Berg", "img/gemeinden/Berg.png"],
+    [4791, "Wuppenau", "img/gemeinden/Wuppenau.png"],
+    [4756, "Schönholzerswilen", "img/gemeinden/Schönholzerswilen.png"],
+    [4921, "Bussnang", "img/gemeinden/Bussnang.png"],
+    [4946, "Weinfelden", "img/gemeinden/Weinfelden.png"],
+    [4941, "Märstetten", "img/gemeinden/Märstetten.png"],
+    [4711, "Affeltrangen", "img/gemeinden/Affeltrangen.svg"],
+    [4881, "Amlikon-Bissegg", "img/gemeinden/Amlikon-Bissegg.png"],
+    [4951, "Wigoltingen", "img/gemeinden/Wigoltingen.png"],
+
+    //Bezirk Frauenfeld, 22 Gemeinden
+    [4606, "Stettfurt", "img/gemeinden/Stettfurt.png"],
+    [4591, "Matzingen", "img/gemeinden/Matzingen.svg"],
+    [4611, "Thundorf", "img/gemeinden/Thundorf.svg"],
+    [4566, "Frauenfeld", "img/gemeinden/Frauenfeld.png"],
+    [4571, "Gachnang", "img/gemeinden/Gachnang.png"],
+    [4590, "Hüttlingen", "img/gemeinden/Hüttlingen.png"],
+    [4561, "Felben-Wellhausen", "img/gemeinden/Felben-Wellhausen.png"],
+    [4831, "Müllheim", "img/gemeinden/Müllheim.png"],
+    [4841, "Pfyn", "img/gemeinden/Pfyn.png"],
+    [4621, "Warth-Weiningen", "img/gemeinden/Warth-Weiningen.png"],
+    [4616, "Uessingen-Buch", "img/gemeinden/Uesslingen-Buch.png"],
+    [4601, "Neunforn", "img/gemeinden/Neunforn.png"],
+    [4816, "Homburg", "img/gemeinden/Homburg.png"],
+    [4811, "Herdern", "img/gemeinden/Herdern.png"],
+    [4821, "Hüttwilen", "img/gemeinden/Hüttwilen.png"],
+    [4801, "Berlingen", "img/gemeinden/Berlingen.svg"],
+    [4864, "Steckborn", "img/gemeinden/Steckborn.png"],
+    [4826, "Mammern", "img/gemeinden/Mammern.png"],
+    [4806, "Eschenz", "img/gemeinden/Eschenz.png"],
+    [4871, "Wagenhausen", "img/gemeinden/Wagenhausen.png"],
+    [4545, "Diessenhofen", "img/gemeinden/Diessenhofen.png"],
+    [4536, "Basadingen-Schlattingen", "img/gemeinden/Basadingen-Schlattingen.png"],
+    [4546, "Schlatt (TG)", "img/gemeinden/Schlatt.png"],
+
+    //Bezirk Münchwilen (TG), 12 Gemeinden
+    [4726, "Fischingen", "img/gemeinden/Fischingen.png"],
+    [4751, "Rickenbach (TG)", "img/gemeinden/Rickenbach.png"],
+    [4786, "Wilen (TG)", "img/gemeinden/Wilen.png"],
+    [4761, "Sirnach", "img/gemeinden/Sirnach.svg"],
+    [4724, "Eschlikon", "img/gemeinden/Eschlikon.png"],
+    [4721, "Bichelsee-Balterswil (Bi.)", "img/gemeinden/Bichelsee-Balterswil.png"],
+    [4746, "Münchwilen (TG)", "img/gemeinden/Münchwilen.png"],
+    [4781, "Wängi", "img/gemeinden/Wängi.svg"],
+    [4551, "Aadorf", "img/gemeinden/Aadorf.svg"],
+    [4723, "Braunau", "img/gemeinden/Braunau.png"],
+    [4776, "Tobel-Tägerschen", "img/gemeinden/Tobel-Tägerschen.png"],
+    [4716, "Bettwiesen", "img/gemeinden/Bettwiesen.png"],
+    [4741, "Lommis", "img/gemeinden/Lommis.png"]
+];
+
+var color = [
+    [1, "#f9d9cc", "#cffae3"],
+    [2, "#f6c7b2", "#b7f8d6"],
+    [3, "#f3b499", "#9ff6c8"],
+    [4, "#f1a27f", "#87f4bb"],
+    [5, "#ee8f66", "#6ff2ad"],
+    [6, "#eb7c4c", "#57f09f"],
+    [7, "#e86a32", "#3fee92"],
+    [8, "#e55719", "#27ec84"],
+    [9, "#e34500", "#10ea77"],
+    [10, "#cc3e00", "#0ed26b"],
+    [11, "#b53700", "#0cbb5f"]
+];
+
+var btnP = null;
+
+var max = 0;
+for (i = 0; i < muniArr.length; i++) {
+    if (max < muniArr[i][2]) {
+        max = muniArr[i][2];
+    }
+}
+
+init();
+
+$("button").click(function () {
+    switch (this.id) {
+        case "btn1":
+            $('#graph').empty();
+            btnP = this.id;
+            init();
+            break;
+        case "btn2":
+            $('#graph').empty();
+            btnP = this.id;
+            init();
+            break;
+        case "btn3":
+            $('#graph').empty();
+            btnP = this.id;
+            init();
+            break;
+        case "btn4":
+            $('#graph').empty();
+            btnP = this.id;
+            init();
+            break;
+        case "btn5":
+            $('#graph').empty();
+            btnP = this.id;
+            init();
+            break;
+        default:
+            $('#graph').empty();
+            btnP = null;
+            init();
+            break;
+    }
+});
