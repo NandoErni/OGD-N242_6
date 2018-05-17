@@ -26,10 +26,11 @@ body, .container{
 .jumbotron{
     width: 60%;
     margin: 0px auto;
+    background-color: transparent;
 }
 
-.jumbotronMap{
-    background-color: transparent;
+#legendeHr{
+    border-color: #aaaaaa;
 }
 
 #tgLogo{
