@@ -11,8 +11,6 @@ function generateTable(data) {
 
     html += "<thead>\n" +
         "    <tr>\n" +
-        "      <th scope=\"col\">BFS-Nr.</th>\n" +
-        "      <th scope=\"col\">Gemeinde</th>\n" +
         "      <th scope=\"col\">Jahr</th>\n" +
         "      <th scope=\"col\">Auszahlung oder Abschoepfung in CHF</th>\n" +
         "      <th scope=\"col\">Auszahlung oder Abschoepfung in CHF pro Einwohner</th>\n" +
@@ -23,9 +21,7 @@ function generateTable(data) {
     for(var i = 0; i < data.length; i++){
 
     html += "<tr>\n" +
-        "      <th scope=\"row\">"+data[i][0]+"</th>\n" +
-        "      <td>"+data[i][1]+"</td>\n" +
-        "      <td>"+data[i][2]+"</td>\n" +
+        "      <th scope=\"row\">"+data[i][2]+"</th>\n" +
         "      <td>"+data[i][3]+"</td>\n" +
         "      <td>"+data[i][4]+"</td>\n" +
         "    </tr>";
