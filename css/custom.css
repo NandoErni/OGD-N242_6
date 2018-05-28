@@ -19,6 +19,10 @@ body, .container{
 
 }
 
+#mainTitle{
+    text-align: left;
+}
+
 .jumbotron{
     width: 60%;
     margin: 0px auto;
@@ -30,11 +34,7 @@ body, .container{
 }
 
 #tgLogo{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 20px;
-    right: 455px;
+    width: 18%;
 }
 
 #mapText{
@@ -68,7 +68,7 @@ body, .container{
     right: 20px;
     top: 820px;
     position: absolute;
-    width: 350px;
+    width: 20%;
     height: 500px;
 }
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="description" content="Finanzausgleich der politischen Gemeinden des Kanton Thurgaus visuell dargestellt">
@@ -48,7 +49,8 @@
 
 
 </head>
-<body onload="bodyOnload();">
+<body onload="bodyOnload();" onresize="bodyOnresize()">
+
 
     <div class="well" id="legende">
         <p id="legendeTitle">Legende</p><hr id="legendeHr">
@@ -91,16 +93,17 @@
                     Negative Vorzeichen kennzeichnen jeweils die Auszahlung an die Gemeinde, positive Vorzeichen Abschöpfungen von der Gemeinde. Die Variable „Auszahlung und Abschöpfung in
                     CHF/Einwohner“ zeigt den pro Gemeinde ausgezahlten bzw. abgeschöpften Betrag relativ zur Einwohnerzahl der Gemeinde. Die Einwohnerzahl wurde per 31.12 des Vorjahres gemäss
                     kantonaler Bevölkerungserhebung ermittelt.
-                </p>
-
-                <br><div id="graph"></div><br>
-
+                </p><br>
                 <div class="slidecontainer">
                     <input type="range" min="2004" max="2017" value="2016" class="slider" id="slider" oninput="sliderOninput();">
                     <p id="slidOutput"></p>
                 </div>
-
             </div>
+                <br><div id="graph"></div><br>
+
+
+
+
         </div>
 
         <div class="darker">

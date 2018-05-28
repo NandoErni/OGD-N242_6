@@ -12,8 +12,8 @@ function generateTable(data) {
     html += "<thead>\n" +
         "    <tr>\n" +
         "      <th scope=\"col\">Jahr</th>\n" +
-        "      <th scope=\"col\">Auszahlung oder Abschoepfung in CHF</th>\n" +
-        "      <th scope=\"col\">Auszahlung oder Abschoepfung in CHF pro Einwohner</th>\n" +
+        "      <th scope=\"col\">Auszahlung oder Abschöpfung in CHF</th>\n" +
+        "      <th scope=\"col\">Auszahlung oder Abschöpfung in CHF pro Einwohner</th>\n" +
         "    </tr>\n" +
         "  </thead>";
 
