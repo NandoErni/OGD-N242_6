@@ -9,7 +9,7 @@ body, .container{
 }
 
 #graph{
-    margin: lololololol;
+    width: 2px;
 }
 
 .darker{
@@ -91,5 +91,27 @@ body, .container{
     color: #ee2c2c;
 }
 #colGreen{
+    color: #228b22;
+}
+
+
+#legendeSmall{
+    margin: auto 15%;
+}
+
+#legendeSmallTitle{
+    font-size: 16pt;
+}
+
+#legendSmallText{
+}
+
+#colSmallBlack{
+    color: #bbbbbb;
+}
+#colSmallRed{
+    color: #ee2c2c;
+}
+#colSmallGreen{
     color: #228b22;
 }
