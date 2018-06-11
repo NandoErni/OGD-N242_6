@@ -9,7 +9,8 @@ body, .container{
 }
 
 #graph{
-    width: 2px;
+    margin-left: 15%;
+    width: 60%;
 }
 
 .darker{
@@ -28,7 +29,7 @@ body, .container{
 }
 
 .jumbotron{
-    width: 60%;
+    width: 65%;
     margin: 0px auto;
     background-color: transparent;
 }
@@ -70,9 +71,9 @@ body, .container{
     bottom: auto;
     left: auto;
     right: 20px;
-    top: 820px;
+    top: 780px;
     position: absolute;
-    width: 20%;
+    width: 17%;
     height: 500px;
 }
 
@@ -87,13 +88,14 @@ body, .container{
 #colBlack{
     color: #bbbbbb;
 }
+
 #colRed{
     color: #ee2c2c;
 }
+
 #colGreen{
     color: #228b22;
 }
-
 
 #legendeSmall{
     margin: auto 15%;
@@ -109,9 +111,11 @@ body, .container{
 #colSmallBlack{
     color: #bbbbbb;
 }
+
 #colSmallRed{
     color: #ee2c2c;
 }
+
 #colSmallGreen{
     color: #228b22;
 }
