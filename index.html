@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon"
+          type="image/png"
+          href="img/tglogo_nurloewe.png">
+
     <meta name="description" content="Finanzausgleich der politischen Gemeinden des Kanton Thurgaus visuell dargestellt">
     <meta name="author" content="Nando Erni, Jan Reifler">
 
@@ -46,6 +50,11 @@
     <!-- TG-Map -->
     <link rel="stylesheet" href="lib/map/css/index.css">
 
+    <!-- js -->
+
+    <script type="text/javascript" src="js/readCSV.js"></script>
+    <script type="text/javascript" src="js/updateSite.js"></script>
+
 
 
 </head>
@@ -82,6 +91,8 @@
                     Betrag von der Gemeinde abgeschöpft wurde. Er enthält Daten der Jahre 2004 bis 2017. Auszahlungen oder Abschöpfungen erfolgen seit 2008 nur, wenn sie mindestens
                     1'000 Franken betragen.
                 </p>
+                <br>
+
             </div>
         </div>
 
@@ -133,6 +144,7 @@
 
         <div class="lighter">
             <p id="footerText">Alle Datensätze wurden von <a href="https://opendata.swiss/de/">OGD Schweiz</a> zur Verfügung gestellt.</p>
+
         </div>
 
     </div>
@@ -140,8 +152,6 @@
 
     <!-- eigene js files -->
     <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/readCSV.js"></script>
-    <script type="text/javascript" src="js/updateSite.js"></script>
 
     <!-- Gemeinde data -->
     <script src="data/gemeindeData.js"></script>

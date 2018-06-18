@@ -6,15 +6,22 @@ function sliderOninput() {
 }
 
 function bodyOnload(){
+
     if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1))
     {
-        window.alert("Bitt benutzen sie nicht Internet Explorer");
+        window.alert("Bitte benutzen sie nicht Internet Explorer");
         window.open("https://www.mozilla.org/de/firefox/new/", "_self");
     }
     readingFinanzausgleich();
     updateSlider();
     color = ["#228b22", "#ee2c2c", "#dddddd"];
     init();
+
+    var images = [];
+    for(var i = 0; i < gemeindeData.length; i++){
+        images[i] = gemeindeData[i][2];
+    }
+
 }
 
 function onClickMap(id) {
