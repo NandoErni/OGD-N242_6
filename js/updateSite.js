@@ -17,10 +17,6 @@ function bodyOnload(){
     color = ["#228b22", "#ee2c2c", "#dddddd"];
     init();
 
-    var images = [];
-    for(var i = 0; i < gemeindeData.length; i++){
-        images[i] = gemeindeData[i][2];
-    }
 
 }
 
